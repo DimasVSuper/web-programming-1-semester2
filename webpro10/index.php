@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show Date</title>
-    <script type="module" src="./src/main.js" defer></script>
+    <title>Menampilkan Tanggal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         button {
             padding: 10px 20px;
@@ -19,22 +24,28 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
         button:hover {
             background-color: #0056b3;
         }
-        #date-display {
+        #hasilTanggal {
             margin-top: 20px;
             font-size: 18px;
             color: #333;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 24px;
+            color: #007bff;
         }
     </style>
 </head>
 <body>
-    <div id="app">
-        <h1>Show Current Date</h1>
-        <button id="show-date-btn">Show Date</button>
-        <div id="date-display"></div>
-    </div>
+    <h1>Menampilkan Tanggal Saat Ini</h1>
+    <button onclick="tampilkanTanggal()">Tampilkan Tanggal</button>
+    <p id="hasilTanggal"></p>
+
+    <script src="javascript.php"></script>
 </body>
 </html>
