@@ -10,7 +10,7 @@
     <title>Tugas 02</title>
 </head>
 <body>
-    <h1>Data Mahasiswa</h1>
+    <h1>Data Mahasiswa!</h1>
     <ul>
         <li>Nama: <?php echo $datadimas['name']; ?></li>
         <li>NIM: <?php echo $datadimas['NIM']; ?></li>
