@@ -22,16 +22,28 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             text-align: center;
         }
         h1 {
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
-        h2 {
-            font-size: 1rem;
-            margin-bottom: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            border: 1px solid #ddd;
         }
         button {
             background-color: #007bff;
@@ -51,12 +63,37 @@
 <body>
     <main>
         <h1>DATA ANDA SEDANG DI PROSES</h1>
-        <h2>Nama: <?php echo htmlspecialchars($_POST['nama']); ?></h2>
-        <h2>Alamat: <?php echo nl2br(htmlspecialchars($_POST['alamat'])); ?></h2>
-        <h2>Tempat Lahir: <?php echo htmlspecialchars($_POST['tempatlahir']); ?></h2>
-        <h2>Tanggal Lahir: <?php echo htmlspecialchars($_POST['tanggallahir']); ?></h2>
-        <h2>Gender: <?php echo htmlspecialchars($_POST['gender']); ?></h2>
-        <h2>Pendidikan: <?php echo htmlspecialchars($_POST['pendidikan']); ?></h2>
+        <table>
+            <tr><th colspan="2">DATA ANDA</th></tr>
+            <tr>
+                <th>Field</th>
+                <th>Data</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><?php echo htmlspecialchars($_POST['nama']); ?></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><?php echo nl2br(htmlspecialchars($_POST['alamat'])); ?></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><?php echo htmlspecialchars($_POST['tempatlahir']); ?></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><?php echo htmlspecialchars($_POST['tanggallahir']); ?></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><?php echo htmlspecialchars($_POST['gender']); ?></td>
+            </tr>
+            <tr>
+                <td>Pendidikan</td>
+                <td><?php echo htmlspecialchars($_POST['pendidikan']); ?></td>
+            </tr>
+        </table>
         <a href="index.php"><button>Kembali ke Form</button></a>
     </main>
 </body>
