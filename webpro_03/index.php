@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
         }
         h1 {
             text-align: center;
@@ -36,6 +36,19 @@
         }
         tr:hover {
             background-color: #f1f1f1;
+        }
+        /* Styling untuk header pertama */
+        .header-pertama {
+            text-align: center;
+            color: red;
+            background-color: black;
+            padding: 10px;
+        }
+        /* Styling untuk header kedua */
+        .header-kedua {
+            text-align: center;
+            color: yellow;
+            padding: 10px;
         }
     </style>
 </head>
@@ -67,7 +80,15 @@
             <td><?php echo $datadimas['Telp']; ?></td>
         </tr>
     </table> -->
-    <h1>Data Penjualan Mobil</h1>
+    <div class="header-pertama">
+        <h1>Selamat hari raya idul fitri</h1>
+    </div>
+    <div class="header-kedua">
+        <h1>Mohon maaf lahir dan batin</h1>
+    </div>
+
+    </div>
+    <!-- <h1>Data Penjualan Mobil</h1>
     <table>
         <tr>
             <th>No</th>
@@ -110,6 +131,27 @@
             <td>Sigra</td>
             <td>Rp 150,000,000</td>
             <td>180</td>
+        </tr>
+    </table> -->
+    <h1>Data</h1>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>No Tiket Kereta</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Azini</td>
+            <td>KAI01</td>
+            <td>jakarta</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lisna</td>
+            <td>KAI02</td>
+            <td>Tangerang</td>
         </tr>
     </table>
 </body>
