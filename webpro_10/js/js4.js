@@ -1,0 +1,1 @@
+document.writeln("Di panggil di Body Tag")
